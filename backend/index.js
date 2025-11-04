@@ -20,9 +20,9 @@ app.use(cors({
 }));
 app.use(express.json()); // Body parser
 
-app.get("/", (req, res)=>{
-    res.send("API Running")
-})
+app.get('/', (req, res) => {
+    res.send('API is running...');
+});
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)

@@ -5,7 +5,8 @@ import axios from 'axios';
 
 const AuthContext = createContext();
 
-const API_URL = 'http://localhost:5000/api/auth'; // Backend Auth URL
+// const API_URL = 'http://localhost:5000/api/auth'; // Backend Auth URL
+const API_URL = 'https://chatbot-backend.vercel.app/api/auth'; // Backend Auth URL
 
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
